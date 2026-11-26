@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas Dinâmico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Minhas Tarefas</h1>
+            <!-- Interação 1: Botão para alternar o tema -->
+            <button id="btn-tema" title="Mudar Tema">🌙 Modo Escuro</button>
+        </header>
+
+        <div class="input-group">
+            <!-- Interação 2: Campo de texto para digitar a tarefa -->
+            <input type="text" id="input-tarefa" placeholder="Digite uma nova tarefa...">
+            <!-- Interação 3: Botão para adicionar a tarefa na lista -->
+            <button id="btn-adicionar">Adicionar</button>
+        </div>
+
+        <!-- Interação 4: Lista dinâmica onde o usuário pode marcar como concluída ou remover -->
+        <ul id="lista-tarefas"></ul>
+
+        <p class="contador">Total de tarefas: <span id="total-tarefas">0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
